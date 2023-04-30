@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-
     <header>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="30"
         viewBox="0 0 25 25"
-        style="fill: #3F72AF; transform: msFilter"
+        style="fill: #3f72af; transform: msFilter"
       >
         <path
           d="M4 4h4.01V2H2v6h2V4zm0 12H2v6h6.01v-2H4v-4zm16 4h-4v2h6v-6h-2v4zM16 4h4v4h2V2h-6v2z"
@@ -30,29 +28,30 @@
     </header>
 
     <section>
-
       <main>
         <form id="formPrimary" action="">
           <div class="containerTxt">
             <textarea id="txtPrimary" placeholder="Escriba un Texto"></textarea>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill: #3F72AF; transform: msFilter"
-                >
-                  <path
-                    d="M16.707 2.293A.996.996 0 0 0 16 2H8a.996.996 0 0 0-.707.293l-5 5A.996.996 0 0 0 2 8v8c0 .266.105.52.293.707l5 5A.996.996 0 0 0 8 22h8c.266 0 .52-.105.707-.293l5-5A.996.996 0 0 0 22 16V8a.996.996 0 0 0-.293-.707l-5-5zM13 17h-2v-2h2v2zm0-4h-2V7h2v6z"
-                  ></path>
-                </svg>
-                <p>Solo minusculas y sin acentos</p>
-              </span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #3f72af; transform: msFilter"
+              >
+                <path
+                  d="M16.707 2.293A.996.996 0 0 0 16 2H8a.996.996 0 0 0-.707.293l-5 5A.996.996 0 0 0 2 8v8c0 .266.105.52.293.707l5 5A.996.996 0 0 0 8 22h8c.266 0 .52-.105.707-.293l5-5A.996.996 0 0 0 22 16V8a.996.996 0 0 0-.293-.707l-5-5zM13 17h-2v-2h2v2zm0-4h-2V7h2v6z"
+                ></path>
+              </svg>
+              <p>Solo minusculas y sin acentos</p>
+            </span>
           </div>
           <div class="containerBtn">
             <button class="buttonPrimary" id="btnEncriptar">Encriptar</button>
-            <button class="buttonSecondary" id="btnDesencriptar">Desencriptar</button>
+            <button class="buttonSecondary" id="btnDesencriptar">
+              Desencriptar
+            </button>
           </div>
         </form>
       </main>
@@ -61,25 +60,23 @@
         <form id="formSecondary" action="">
           <div class="containerTxt">
             <textarea
-            id="txtSecondary"
-            placeholder="Ningun mensaje Encontrado"
-          ></textarea>
+              id="txtSecondary"
+              placeholder="Ningun mensaje Encontrado"
+            ></textarea>
           </div>
           <div class="containerBtn">
             <button class="buttonSecondary" id="btnCopiar">Copiar</button>
           </div>
         </form>
       </aside>
-      
     </section>
 
-    <hr>
-    
+    <hr />
+
     <footer>
       <span>@ONE - JoseMartinez - 2023</span>
     </footer>
 
     <script src="./js/main.js"></script>
-
   </body>
 </html>
