@@ -18,7 +18,6 @@ function encriptar(event) {
       txtNuevo +=txtPrincipal[n]
     }
   }
-  console.log(txtNuevo)
   document.getElementById("txtSecondary").value = txtNuevo
 }
 function desencriptar(event) {
@@ -45,10 +44,10 @@ function desencriptar(event) {
       txtNuevo +=txtPrincipal[n];
     }
   }
-  console.log(txtNuevo)
   document.getElementById("txtSecondary").value = txtNuevo
 }
-function copiar() {
+function copiar(event) {
+  event.preventDefault()
   let copyInput = document.getElementById("txtSecondary")
   copyInput.select()
   document.execCommand("copy")
